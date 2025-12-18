@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKNOW - Đăng nhập</title>
+    <link rel="stylesheet" href="../CSS/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="login-card">
+            <div class="brand-section">
+                <div class="brand-header">
+                    <h1 class="logo-name">BOOKNOW</h1>
+                    <p class="logo-slogan">Cùng bạn trải nghiệm mọi dịch vụ tốt nhất</p>
+                </div>
+                
+                <div class="brand-body">
+                    <h2 class="main-promo">VÉ MÁY BAY & <br>KHÁCH SẠN GIÁ TỐT</h2>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3 class="title-center">Đăng nhập tài khoản</h3>
+                
+                <div class="tab-control">
+                    <div class="tab-item active" id="tab-login">
+                        <i class="fas fa-user-circle"></i> ĐĂNG NHẬP
+                    </div>
+                    <div class="tab-item" id="tab-register">ĐĂNG KÝ</div>
+                </div>
+
+                <div id="alert-msg" class="alert-box hidden"></div>
+
+                <form id="auth-form">
+                    <div class="input-field" id="name-field" style="display: none;">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="user-name" placeholder="Họ và tên">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="user-email" placeholder="Nhập email" required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="user-pass" placeholder="Nhập mật khẩu" required>
+                        <i class="far fa-eye-slash" id="toggle-eye"></i>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="btn-action">Đăng nhập</button>
+                    <a href="#" class="link-forgot">Quên mật khẩu?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/dangnhap.js"></script>
+</body>
+</html>
