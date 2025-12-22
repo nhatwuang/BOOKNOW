@@ -1,0 +1,118 @@
+:root {
+    --primary: #ef5222;
+    --secondary: #007d3c;
+    --bg-pink: #fef1ed;
+    --border-soft: #f9d9d0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+body {
+    background: linear-gradient(to bottom, var(--primary) 180px, #f2f2f2 180px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: #fff;
+    width: 1000px; /* Tăng độ rộng để khung không bị nhỏ */
+    min-height: 550px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* Cột trái */
+.brand-section {
+    flex: 1.2; /* Chiếm 60% */
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name { color: var(--secondary); font-size: 34px; font-weight: 900; }
+.logo-slogan { color: var(--primary); font-weight: bold; margin-top: 5px; }
+.main-promo { color: var(--secondary); font-size: 26px; margin-top: 40px; line-height: 1.4; }
+
+/* Cột phải */
+.form-section {
+    flex: 1; /* Chiếm 40% */
+    padding: 45px;
+    border-left: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-center { 
+    text-align: center; /* Canh giữa tiêu đề theo yêu cầu */
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.tab-control {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #999;
+    font-size: 14px;
+}
+
+.tab-item.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: -2px;
+}
+
+/* Inputs & Buttons */
+.input-field {
+    background: var(--bg-pink);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+.input-field i { color: var(--primary); width: 25px; }
+.input-field input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.submit-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover { background: #d4451b; }
+.link-forgot { color: var(--primary); text-decoration: none; font-size: 14px; margin-top: 20px; display: inline-block; }
+
+/* Alert Box cho Trello */
+.alert-box { padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center; font-size: 13px; }
+.alert-box.error { background: #ffebee; color: #c62828; }
+.alert-box.success { background: #e8f5e9; color: #2e7d32; }
+.hidden { display: none; }
